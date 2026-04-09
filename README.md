@@ -1,9 +1,45 @@
 # 📊 Olist E-Commerce Analysis
 
 ## 📌 Project Overview
-Analisis komprehensif data e-commerce Olist (Brazil) dengan 100,000+ orders. Project ini mencakup data cleaning, SQL analysis, EDA, business recommendations, dan advanced customer analytics.
+Analisis data e-commerce Olist (Brazil) dengan 100,000+ orders. Mencakup data cleaning, SQL analysis, EDA, business recommendations, dan customer analytics.
 
 **Tools:** Python, Pandas, Matplotlib, Seaborn, SQLite
+
+---
+
+## 📁 Struktur Proyek
+olist-ecommerce-analysis/
+│
+├── notebooks/
+│ ├── 01_data_understanding.ipynb
+│ ├── 02_data_cleaning.ipynb
+│ ├── 03_create_database.ipynb
+│ ├── 04_sql_queries.ipynb
+│ ├── 05_eda_visualization.ipynb
+│ ├── 06_business_recommendations.ipynb
+│ └── 07_advanced_analysis.ipynb
+│
+├── top_categories.png
+├── top_categories_final.png
+├── top_categories_data.csv
+├── revenue_trend.png
+├── revenue_trend_final.png
+├── revenue_trend_data.csv
+├── payment_analysis.png
+├── payment_final.png
+├── payment_analysis_data.csv
+├── review_analysis.png
+├── review_final.png
+├── review_score_data.csv
+├── delivery_vs_review.png
+├── delivery_vs_review_final.png
+├── delivery_performance_data.csv
+├── rfm_analysis.png
+├── repeat_purchase.png
+├── time_patterns.png
+├── seller_performance.png
+├── freight_analysis.png
+└── README.md
 
 ---
 
@@ -11,9 +47,9 @@ Analisis komprehensif data e-commerce Olist (Brazil) dengan 100,000+ orders. Pro
 
 | Metric | Value |
 |--------|-------|
-| Total Revenue | $4.2 Billion |
-| Total Orders | 45,200 |
-| Average Order Value | $92 |
+| Total Revenue | From payment_analysis_data.csv |
+| Total Orders | From review_score_data.csv |
+| Average Order Value | From revenue_trend_data.csv |
 | Customer Satisfaction | 4.2/5.0 |
 | Repeat Purchase Rate | 12% |
 
@@ -22,22 +58,24 @@ Analisis komprehensif data e-commerce Olist (Brazil) dengan 100,000+ orders. Pro
 ## 📊 Visualizations
 
 ### Basic Analysis
-| Chart | Insight |
-|-------|---------|
-| Top Categories | health_beauty leads with $850M revenue |
-| Revenue Trend | Peak in November-December |
-| Payment Method | Credit card dominates (74%) |
-| Review Distribution | 78% satisfaction rate |
-| Delivery vs Review | -0.67 correlation |
+
+| Chart | File |
+|-------|------|
+| Top Categories | `top_categories_final.png` |
+| Revenue Trend | `revenue_trend_final.png` |
+| Payment Method | `payment_final.png` |
+| Review Distribution | `review_final.png` |
+| Delivery vs Review | `delivery_vs_review_final.png` |
 
 ### Advanced Analysis
-| Analysis | Key Insight |
-|----------|-------------|
-| RFM Segmentation | 45% customers are "At Risk" |
-| Repeat Purchase | Repeat customers spend 2.5x more |
-| Time Patterns | Peak at 10am & 8pm, weekdays |
-| Seller Performance | Delivery time impacts rating |
-| Freight Analysis | High freight = lower reviews |
+
+| Chart | File |
+|-------|------|
+| RFM Segmentation | `rfm_analysis.png` |
+| Repeat Purchase | `repeat_purchase.png` |
+| Time Patterns | `time_patterns.png` |
+| Seller Performance | `seller_performance.png` |
+| Freight Analysis | `freight_analysis.png` |
 
 ---
 
@@ -55,26 +93,6 @@ Analisis komprehensif data e-commerce Olist (Brazil) dengan 100,000+ orders. Pro
 
 ## 🛠️ Tech Stack
 
-- **Python**: Pandas, NumPy, Matplotlib, Seaborn
-- **SQL**: SQLite for database management
-- **Jupyter Notebook**: Interactive analysis
-
----
-
-## 📁 Repository Structure
-olist-ecommerce-analysis/
-├── data/ # Dataset files
-├── notebooks/ # 7 Jupyter notebooks
-├── images/ # 10 visualization outputs
-├── README.md
-└── requirements.txt
-
----
-
-## 🚀 How to Run
-
-```bash
-git clone https://github.com/yourusername/olist-ecommerce-analysis.git
-cd olist-ecommerce-analysis
-pip install -r requirements.txt
-jupyter notebook
+- Python (Pandas, NumPy, Matplotlib, Seaborn)
+- SQLite for database management
+- Jupyter Notebook (7 notebooks)
